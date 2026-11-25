@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Valquíria Meira | Harmonização Facial — Itaim Bibi, SP</title>
+    <meta name="description" content="Biomédica Especialista em Harmonização Facial no Itaim Bibi, SP (CRBM 36253). Realço sua beleza, sem transformar quem você é.">
+    
+    <!-- Fontes Elegantes (Google Fonts) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Ícones (FontAwesome CDN) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- ==========================================================
+         META PIXEL CODE (Substitua SEU_PIXEL_ID pelo ID da BM dela)
+         ========================================================== -->
+    <!--
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'SEU_PIXEL_ID');
+      fbq('track', 'PageView');
+    </script>
+    -->
+
+    <style>
+        :root {
+            --bg-cream: #F7F4F0;
+            --card-white: #FFFFFF;
+            --earth-sand: #B59E82;
+            --earth-brown: #3B2314;
+            --earth-taupe: #6E6259;
+            --earth-olive: #444E3E;
+            --text-dark: #2C221E;
+            --text-muted: #786D66;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: var(--bg-cream);
+            background-image: radial-gradient(circle at top center, #EFE9E1 0%, #F7F4F0 70%);
+            color: var(--text-dark);
+            font-family: 'Montserrat', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 36px 20px 28px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 440px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Foto de Perfil */
+        .profile-wrapper {
+            position: relative;
+            width: 118px;
+            height: 118px;
+            border-radius: 50%;
+            padding: 4px;
+            background: linear-gradient(135deg, var(--earth-sand), var(--earth-brown));
+            margin-bottom: 18px;
+            box-shadow: 0 10px 25px rgba(59, 35, 20, 0.12);
+        }
+
+        .profile-img {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid var(--bg-cream);
+            background-color: #E6DFD5;
+        }
+
+        /* Cabeçalho */
+        h1 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            font-weight: 600;
+            color: var(--earth-brown);
+            letter-spacing: 0.4px;
+            line-height: 1.15;
+            margin-bottom: 4px;
+        }
+
+        .subtitle {
+            font-size: 0.78rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1.8px;
+            color: var(--earth-olive);
+            margin-bottom: 14px;
+        }
+
+        .bio {
+            font-size: 0.9rem;
+            font-weight: 400;
+            color: var(--text-muted);
+            line-height: 1.5;
+            max-width: 340px;
+            margin-bottom: 10px;
+        }
+
+        .location-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.78rem;
+            color: var(--earth-taupe);
+            background: rgba(181, 158, 130, 0.16);
+            padding: 6px 14px;
+            border-radius: 20px;
+            margin-bottom: 28px;
+        }
+
+        /* Lista de Botões */
+        .links-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 14px;
+            margin-bottom: 32px;
+        }
+
+        .btn-link {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+            padding: 16px 22px;
+            border-radius: 14px;
+            text-decoration: none;
+            font-size: 0.92rem;
+            font-weight: 500;
+            transition: all 0.28s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-link .btn-content {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            text-align: left;
+        }
+
+        .btn-link i.icon-left {
+            font-size: 1.25rem;
+            width: 24px;
+            text-align: center;
+        }
+
+        .btn-link i.icon-right {
+            font-size: 0.85rem;
+            opacity: 0.65;
+            transition: transform 0.25s ease;
+        }
+
+        .btn-link:hover i.icon-right {
+            transform: translateX(4px);
+        }
+
+        /* Botão Principal (WhatsApp - Destaque Marrom Café) */
+        .btn-primary {
+            background-color: var(--earth-brown);
+            color: #FFFFFF;
+            box-shadow: 0 8px 20px rgba(59, 35, 20, 0.18);
+        }
+
+        .btn-primary:hover {
+            background-color: #2B190E;
+            transform: translateY(-2px);
+            box-shadow: 0 12px 24px rgba(59, 35, 20, 0.24);
+        }
+
+        .btn-subtext {
+            display: block;
+            font-size: 0.72rem;
+            font-weight: 300;
+            opacity: 0.85;
+            margin-top: 2px;
+        }
+
+        /* Botões Secundários (Branco + Borda Areia) */
+        .btn-secondary {
+            background-color: var(--card-white);
+            color: var(--earth-brown);
+            border: 1px solid rgba(181, 158, 130, 0.45);
+            box-shadow: 0 4px 12px rgba(59, 35, 20, 0.04);
+        }
+
+        .btn-secondary:hover {
+            border-color: var(--earth-brown);
+            background-color: #FCFBF9;
+            transform: translateY(-2px);
+        }
+
+        /* Botão Verde Musgo (Avaliações / Experiência) */
+        .btn-olive {
+            background-color: var(--earth-olive);
+            color: #FFFFFF;
+            box-shadow: 0 6px 16px rgba(68, 78, 62, 0.16);
+        }
+
+        .btn-olive:hover {
+            background-color: #363E31;
+            transform: translateY(-2px);
+        }
+
+        /* Redes Sociais */
+        .social-row {
+            display: flex;
+            gap: 16px;
+            margin-bottom: 28px;
+        }
+
+        .social-icon {
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            background-color: var(--card-white);
+            border: 1px solid rgba(181, 158, 130, 0.45);
+            color: var(--earth-brown);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            font-size: 1.1rem;
+            transition: all 0.25s ease;
+        }
+
+        .social-icon:hover {
+            background-color: var(--earth-brown);
+            color: #FFFFFF;
+            transform: translateY(-2px);
+        }
+
+        /* Rodapé Ético (Compliance CFBM) */
+        footer {
+            border-top: 1px solid rgba(181, 158, 130, 0.3);
+            padding-top: 18px;
+            width: 100%;
+            font-size: 0.7rem;
+            color: var(--text-muted);
+            line-height: 1.5;
+        }
+
+        footer .crbm {
+            font-weight: 600;
+            color: var(--earth-taupe);
+            margin-bottom: 4px;
+        }
+
+        footer .agency-credit {
+            margin-top: 14px;
+            font-size: 0.65rem;
+            opacity: 0.7;
+        }
+
+        footer .agency-credit a {
+            color: var(--earth-taupe);
+            text-decoration: none;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <main class="container">
+        <!-- Foto de Perfil: Substitua o src pela foto oficial da Dra. Valquíria -->
+        <div class="profile-wrapper">
+            <img src="dra-val-1.webp" alt="Dra. Valquíria Meira" class="profile-img">
+        </div>
+
+        <h1>Dra. Valquíria Meira</h1>
+        <p class="subtitle">Harmonização Facial</p>
+
+        <p class="bio">
+            Realço sua beleza com naturalidade, propósito e elegância — sem transformar quem você é.
+        </p>
+
+        <div class="location-badge">
+            <i class="fa-solid fa-location-dot"></i>
+            <span>Itaim Bibi, São Paulo</span>
+        </div>
+
+        <!-- Botões de Ação -->
+        <div class="links-list">
+            
+            <!-- 1. WhatsApp Principal com Evento de Conversão -->
+            <a href="https://wa.me/5511993923335?text=Ol%C3%A1!%20Vim%20pelo%20Instagram%20da%20Dra.%20Valqu%C3%ADria%20Meira%20e%20gostaria%20de%20agendar%20minha%20avalia%C3%A7%C3%A3o." 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-link btn-primary"
+               onclick="if(typeof fbq !== 'undefined'){ fbq('track', 'Contact'); }">
+                <div class="btn-content">
+                    <i class="fa-brands fa-whatsapp icon-left"></i>
+                    <div>
+                        Agendar Consulta de Avaliação
+                        <span class="btn-subtext">Atendimento exclusivo pelo WhatsApp</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right icon-right"></i>
+            </a>
+
+            <!-- 2. Site / Landing Page -->
+            <a href="https://dravalquiriameira.com.br" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-link btn-secondary">
+                <div class="btn-content">
+                    <i class="fa-regular fa-gem icon-left"></i>
+                    <div>
+                        Conhecer os Procedimentos
+                        <span class="btn-subtext">Escultura Labial, Rinomodelação e Harmonização</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right icon-right"></i>
+            </a>
+
+            <!-- 3. Localização Google Maps -->
+            <a href="https://www.google.com/maps/search/?api=1&query=Rua+Joaquim+Floriano+413+Itaim+Bibi+Sao+Paulo+SP" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-link btn-secondary">
+                <div class="btn-content">
+                    <i class="fa-solid fa-map-location-dot icon-left"></i>
+                    <div>
+                        Como Chegar ao Consultório
+                        <span class="btn-subtext">R. Joaquim Floriano, 413 - 9º andar, Itaim Bibi</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right icon-right"></i>
+            </a>
+
+            <!-- 4. Avaliações Google (Substitua pelo link direto de avaliações do GMN) -->
+            <a href="https://dravalquiriameira.com.br" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               class="btn-link btn-olive">
+                <div class="btn-content">
+                    <i class="fa-solid fa-star icon-left"></i>
+                    <div>
+                        Protocolo Lumia
+                        <span class="btn-subtext">Saiba mais</span>
+                    </div>
+                </div>
+                <i class="fa-solid fa-chevron-right icon-right"></i>
+            </a>
+
+        </div>
+
+        <!-- Ícones Sociais -->
+        <div class="social-row">
+            <a href="https://www.instagram.com/dravalquiriameira/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/5511993923335" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="WhatsApp">
+                <i class="fa-brands fa-whatsapp"></i>
+            </a>
+        </div>
+
+        <!-- Rodapé Legal (Compliance CFBM) -->
+        <footer>
+            <p class="crbm">Dra. Valquíria Campos Meira • Biomédica Esteta • CRBM 36253</p>
+            <p>Publicidade em conformidade com o Código de Ética Biomédico (Resoluções CFBM nº 330/2020 e nº 240/2014).</p>
+            <p class="agency-credit">Desenvolvido por <a href="#">Eleven FaMa</a></p>
+        </footer>
+    </main>
+
+</body>
+</html>

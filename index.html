@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dra. Valquíria Meira | Harmonização Facial — Itaim Bibi, SP</title>
+    <meta name="description" content="Harmonização facial sutil, com propósito e naturalidade no Itaim Bibi, São Paulo. Atendimento exclusivo com a Dra. Valquíria Meira, Biomédica Esteta (CRBM 36253).">
+
+    <!-- Fontes Editoriais Google Fonts: Cormorant Garamond (Títulos) e Montserrat (Corpo) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!-- FontAwesome 6 CDN para ícones refinados -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Configuração Personalizada de Design Tokens (Paleta Terrosa & Tipografia) -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        cream: '#F7F4F0',
+                        sandSurface: '#EFE9E1',
+                        cardWhite: '#FFFFFF',
+                        sand: '#B59E82',
+                        coffee: '#3B2314',
+                        coffeeDark: '#2A180D',
+                        taupe: '#6E6259',
+                        olive: '#444E3E',
+                        textDark: '#2C221E',
+                    },
+                    fontFamily: {
+                        serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+                        sans: ['"Montserrat"', 'system-ui', 'sans-serif'],
+                    },
+                    boxShadow: {
+                        soft: '0 20px 50px -15px rgba(59, 35, 20, 0.08)',
+                        card: '0 10px 30px -10px rgba(59, 35, 20, 0.06)',
+                        floating: '0 12px 32px rgba(59, 35, 20, 0.22)',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- ==========================================================
+         META PIXEL CODE (Substitua SEU_PIXEL_ID pelo ID da BM dela)
+         ========================================================== -->
+    <!--
+    <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', 'SEU_PIXEL_ID');
+      fbq('track', 'PageView');
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=SEU_PIXEL_ID&ev=PageView&noscript=1"/>
+    </noscript>
+    -->
+</head>
+
+<body class="bg-cream text-textDark font-sans antialiased selection:bg-sand/30 selection:text-coffee overflow-x-hidden">
+
+    <!-- ==========================================================
+         1. NAVBAR STICKY COM GLASSMORPHISM
+         ========================================================== -->
+    <header id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-cream/85 backdrop-blur-md border-b border-sand/25">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+            <div class="flex items-center justify-between h-20">
+                <!-- Marca / Assinatura -->
+                <a href="#" class="flex flex-col group">
+                    <span class="font-serif text-2xl sm:text-[1.75rem] font-semibold text-coffee tracking-wide leading-none group-hover:text-olive transition-colors">
+                        Dra. Valquíria Meira
+                    </span>
+                    <span class="text-[0.65rem] uppercase tracking-[0.22em] text-taupe mt-1">
+                        Harmonização Facial
+                    </span>
+                </a>
+
+                <!-- Links Desktop -->
+                <nav class="hidden md:flex items-center gap-8 text-xs font-medium uppercase tracking-[0.16em] text-taupe">
+                    <a href="#procedimentos" class="hover:text-coffee transition-colors py-2">Procedimentos</a>
+                    <a href="#sobre" class="hover:text-coffee transition-colors py-2">Sobre</a>
+                    <a href="#consultorio" class="hover:text-coffee transition-colors py-2">Consultório</a>
+                    <a href="#duvidas" class="hover:text-coffee transition-colors py-2">Dúvidas</a>
+                </nav>
+
+                <!-- CTA Desktop -->
+                <div class="hidden md:block">
+                    <a href="https://wa.me/5511993923335?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20minha%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Valqu%C3%ADria%20Meira."
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       onclick="if(typeof fbq !== 'undefined'){ fbq('track', 'Contact'); }"
+                       class="inline-flex items-center gap-2.5 bg-coffee hover:bg-coffeeDark text-cream text-xs font-medium uppercase tracking-[0.14em] px-6 py-3.5 rounded-full transition-all duration-300 shadow-card hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-sm"></i>
+                        <span>Agendar Consulta</span>
+                    </a>
+                </div>
+
+                <!-- Botão Menu Mobile -->
+                <button id="mobile-menu-btn"
+                        type="button"
+                        aria-label="Abrir menu de navegação"
+                        aria-expanded="false"
+                        class="md:hidden w-11 h-11 rounded-full border border-sand/40 flex items-center justify-center text-coffee hover:bg-sandSurface transition-colors">
+                    <i id="menu-icon" class="fa-solid fa-bars text-lg"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Menu Mobile Expansível -->
+        <div id="mobile-menu" class="md:hidden max-h-0 overflow-hidden transition-all duration-300 ease-in-out bg-cream/95 backdrop-blur-lg border-b border-sand/20">
+            <div class="px-6 py-6 flex flex-col gap-4">
+                <a href="#procedimentos" class="mobile-nav-link text-sm font-medium uppercase tracking-[0.15em] text-coffee py-2 border-b border-sand/20">Procedimentos</a>
+                <a href="#sobre" class="mobile-nav-link text-sm font-medium uppercase tracking-[0.15em] text-coffee py-2 border-b border-sand/20">Sobre</a>
+                <a href="#consultorio" class="mobile-nav-link text-sm font-medium uppercase tracking-[0.15em] text-coffee py-2 border-b border-sand/20">Consultório</a>
+                <a href="#duvidas" class="mobile-nav-link text-sm font-medium uppercase tracking-[0.15em] text-coffee py-2 border-b border-sand/20">Dúvidas</a>
+                <a href="https://wa.me/5511993923335?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20minha%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Valqu%C3%ADria%20Meira."
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   onclick="if(typeof fbq !== 'undefined'){ fbq('track', 'Contact'); }"
+                   class="mt-2 inline-flex items-center justify-center gap-2.5 bg-coffee text-cream text-xs font-medium uppercase tracking-[0.14em] px-6 py-4 rounded-full shadow-card">
+                    <i class="fa-brands fa-whatsapp text-base"></i>
+                    <span>Agendar Avaliação</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- ==========================================================
+             2. HERO SECTION (LAYOUT EDITORIAL SPLIT)
+             ========================================================== -->
+        <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 overflow-hidden">
+            <!-- Brilho Orgânico Sutil de Fundo -->
+            <div class="pointer-events-none absolute top-0 right-0 w-[600px] h-[600px] bg-sand/15 rounded-full blur-3xl -translate-y-1/3 translate-x-1/4"></div>
+
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-10 items-center">
+
+                    <!-- Coluna Esquerda: Copy Editorial -->
+                    <div class="lg:col-span-7 reveal opacity-0 translate-y-6 transition-all duration-700">
+                        <div class="inline-flex items-center gap-2.5 px-4 py-2 rounded-full bg-sandSurface border border-sand/35 mb-7">
+                            <i class="fa-solid fa-location-dot text-olive text-xs"></i>
+                            <span class="text-[0.68rem] sm:text-xs font-medium uppercase tracking-[0.2em] text-olive">
+                                Itaim Bibi
+                            </span>
+                        </div>
+
+                        <h1 class="font-serif text-[clamp(2.8rem,5.8vw,4.9rem)] leading-[1.04] font-medium text-coffee tracking-tight mb-7">
+                            Harmonização Facial no Itaim Bibi com <span class="italic text-sand font-normal">Naturalidade, Propósito</span> e Elegância.
+                        </h1>
+
+                        <p class="text-base sm:text-lg text-taupe font-light leading-relaxed max-w-xl mb-10">
+                            <span class="font-serif italic text-2xl text-coffee block mb-2">“Realço sua beleza, sem transformar quem você é.”</span>
+                            Atendimento exclusivo com a <strong class="font-medium text-coffee">Dra. Valquíria Meira</strong>, Biomédica Especialista e Professora de Pós-Graduação em Estética.
+                        </p>
+
+                        <!-- Botões de Ação -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://wa.me/5511993923335?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20minha%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Valqu%C3%ADria%20Meira."
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               onclick="if(typeof fbq !== 'undefined'){ fbq('track', 'Contact'); }"
+                               class="inline-flex items-center justify-center gap-3 bg-coffee hover:bg-coffeeDark text-cream text-xs sm:text-sm font-medium uppercase tracking-[0.13em] px-8 py-4 rounded-full shadow-soft transition-all duration-300 hover:-translate-y-0.5">
+                                <i class="fa-brands fa-whatsapp text-lg"></i>
+                                <span>Agendar Avaliação</span>
+                            </a>
+
+                            <a href="#procedimentos"
+                               class="inline-flex items-center justify-center gap-2.5 bg-transparent hover:bg-sandSurface text-coffee border border-sand/60 hover:border-coffee text-xs sm:text-sm font-medium uppercase tracking-[0.13em] px-8 py-4 rounded-full transition-all duration-300">
+                                <span>Explorar Procedimentos</span>
+                                <i class="fa-solid fa-arrow-down text-xs"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Coluna Direita: Moldura Editorial em Arco -->
+                    <div class="lg:col-span-5 flex justify-center lg:justify-end reveal opacity-0 translate-y-6 transition-all duration-700 delay-150">
+                        <div class="relative w-full max-w-[400px]">
+                            <!-- Moldura Decorativa Externa -->
+                            <div class="absolute -inset-3 rounded-t-[220px] rounded-b-3xl border border-sand/45 pointer-events-none"></div>
+
+                            <!-- Container do Retrato em Arco -->
+                            <div class="relative aspect-[3/4] w-full rounded-t-[210px] rounded-b-3xl overflow-hidden bg-sandSurface shadow-soft border border-sand/30">
+                                <!-- FOTO PRINCIPAL HERO: Substitua o arquivo abaixo por 'dra-val.webp' na mesma pasta -->
+                                <img id="hero-portrait"
+                                     src="dra-val-1.webp"
+                                     alt="Dra. Valquíria Meira — Biomédica Especialista em Harmonização Facial"
+                                     class="w-full h-full object-cover object-[center_18%] transition-transform duration-700 hover:scale-[1.03]"
+                                     onerror="handleImageFallback(this, 'portrait-fallback')">
+
+                                <!-- Placeholder Editorial em Tons Terrosos (exibido automaticamente enquanto 'dra-val.webp' não estiver na pasta) -->
+                                <div id="portrait-fallback" class="hidden w-full h-full flex-col items-center justify-center p-8 text-center bg-gradient-to-b from-sandSurface via-[#E9E1D6] to-sand/30">
+                                    <div class="w-28 h-28 rounded-full border border-coffee/25 flex items-center justify-center mb-6 bg-cream/70 shadow-inner">
+                                        <svg viewBox="0 0 100 100" class="w-16 h-16 text-coffee" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true">
+                                            <circle cx="50" cy="50" r="44" stroke-dasharray="3 3" opacity="0.45"/>
+                                            <text x="50" y="59" text-anchor="middle" font-family="Cormorant Garamond, serif" font-size="34" font-weight="500" fill="currentColor" stroke="none">VM</text>
+                                        </svg>
+                                    </div>
+                                    <p class="font-serif text-3xl text-coffee italic mb-1.5">Dra. Valquíria Meira</p>
+                                    <p class="text-[0.68rem] uppercase tracking-[0.2em] text-taupe mb-5">Foto Principal • Hero</p>
+                                    <span class="inline-block text-[0.68rem] text-taupe bg-cream/85 border border-sand/40 px-4 py-1.5 rounded-full">
+                                        Inserir arquivo: <strong class="font-semibold text-coffee">dra-val.webp</strong>
+                                    </span>
+                                </div>
+                            </div>
+
+                            <!-- Card Flutuante Sutil -->
+                            <div class="absolute -bottom-5 -left-3 sm:-left-8 bg-cardWhite/95 backdrop-blur-md border border-sand/35 rounded-2xl px-5 py-4 shadow-card max-w-[265px]">
+                                <div class="flex items-center gap-3.5">
+                                    <div class="w-10 h-10 rounded-full bg-olive/10 text-olive flex items-center justify-center shrink-0">
+                                        <i class="fa-solid fa-feather-pointed text-sm"></i>
+                                    </div>
+                                    <div>
+                                        <p class="font-serif text-lg font-semibold text-coffee leading-tight">
+                                            Naturalidade &amp; Precisão
+                                        </p>
+                                        <p class="text-[0.7rem] text-taupe tracking-wide">
+                                            Respeito à sua anatomia única
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+             3. FAIXA DE VALOR MINIMALISTA (VERDE MUSGO)
+             ========================================================== -->
+        <section class="bg-olive text-cream py-5 border-y border-sand/20">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+                <div class="flex flex-wrap items-center justify-center md:justify-between gap-x-8 gap-y-3 text-xs sm:text-[0.78rem] font-medium uppercase tracking-[0.18em]">
+                    <span class="flex items-center gap-2.5">
+                        <i class="fa-solid fa-sparkles text-sand text-[0.65rem]"></i>
+                        Resultados Sutis e Naturais
+                    </span>
+                    <span class="hidden lg:inline text-sand/50">•</span>
+                    <span class="flex items-center gap-2.5">
+                        <i class="fa-solid fa-user-check text-sand text-[0.65rem]"></i>
+                        Especialista em Público Feminino
+                    </span>
+                    <span class="hidden lg:inline text-sand/50">•</span>
+                    <span class="flex items-center gap-2.5">
+                        <i class="fa-solid fa-shield-halved text-sand text-[0.65rem]"></i>
+                        CRBM 36253
+                    </span>
+                    <span class="hidden lg:inline text-sand/50">•</span>
+                    <span class="flex items-center gap-2.5">
+                        <i class="fa-solid fa-location-dot text-sand text-[0.65rem]"></i>
+                        Itaim Bibi, São Paulo
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+             4. SEÇÃO DE PROCEDIMENTOS COM CARROSSEL INTERATIVO (#procedimentos)
+             ========================================================== -->
+        <section id="procedimentos" class="py-24 lg:py-32 bg-sandSurface/70 border-b border-sand/25">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+
+                <!-- Cabeçalho da Seção + Controles de Autoplay -->
+                <div class="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 reveal opacity-0 translate-y-6 transition-all duration-700">
+                    <div class="max-w-2xl">
+                        <p class="text-xs font-medium uppercase tracking-[0.22em] text-olive mb-4">
+                            Protocolos &amp; Procedimentos
+                        </p>
+                        <h2 class="font-serif text-[clamp(2.4rem,4.5vw,3.8rem)] leading-[1.08] font-medium text-coffee">
+                            Procedimentos pensados para a <span class="italic text-sand font-normal">sua anatomia.</span>
+                        </h2>
+                    </div>
+
+                    <!-- Controle de Autoplay e Indicador -->
+                    <div class="flex items-center gap-3">
+                        <button id="carousel-autoplay-btn"
+                                type="button"
+                                onclick="toggleCarouselAutoplay()"
+                                aria-label="Pausar ou retomar apresentação automática"
+                                class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full bg-cardWhite border border-sand/40 text-xs font-medium text-coffee hover:border-coffee transition-colors shadow-sm">
+                            <i id="autoplay-icon" class="fa-solid fa-pause text-[0.65rem] text-olive"></i>
+                            <span id="autoplay-label">Autoplay ativo</span>
+                        </button>
+                        <button type="button"
+                                onclick="prevSlide()"
+                                aria-label="Procedimento anterior"
+                                class="w-11 h-11 rounded-full bg-cardWhite border border-sand/45 text-coffee hover:bg-coffee hover:text-cream flex items-center justify-center transition-all shadow-sm">
+                            <i class="fa-solid fa-chevron-left text-xs"></i>
+                        </button>
+                        <button type="button"
+                                onclick="nextSlide()"
+                                aria-label="Próximo procedimento"
+                                class="w-11 h-11 rounded-full bg-cardWhite border border-sand/45 text-coffee hover:bg-coffee hover:text-cream flex items-center justify-center transition-all shadow-sm">
+                            <i class="fa-solid fa-chevron-right text-xs"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- CARROSSEL INTERATIVO DE IMAGENS + DETALHE SINCRONIZADO -->
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-stretch mb-10 reveal opacity-0 translate-y-6 transition-all duration-700 delay-100">
+
+                    <!-- Coluna Esquerda (7 cols): Carrossel de Imagens com Swipe -->
+                    <div class="lg:col-span-7 flex flex-col">
+                        <div id="carousel-viewport"
+                             class="relative w-full aspect-[4/3] sm:aspect-[16/11] rounded-3xl overflow-hidden bg-cardWhite border border-sand/40 shadow-soft select-none touch-pan-y">
+
+                            <!-- Trilho dos Slides -->
+                            <div id="carousel-track" class="flex w-full h-full transition-transform duration-500 ease-out">
+                                <!-- Slides injetados dinamicamente via JavaScript -->
+                            </div>
+
+                            <!-- Setas Sobrepostas (Mobile & Desktop) -->
+                            <button type="button"
+                                    onclick="prevSlide()"
+                                    aria-label="Slide anterior"
+                                    class="absolute left-3.5 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-cream/90 hover:bg-coffee text-coffee hover:text-cream backdrop-blur-sm border border-sand/40 flex items-center justify-center transition-all shadow-card z-20">
+                                <i class="fa-solid fa-arrow-left text-xs"></i>
+                            </button>
+                            <button type="button"
+                                    onclick="nextSlide()"
+                                    aria-label="Próximo slide"
+                                    class="absolute right-3.5 top-1/2 -translate-y-1/2 w-10 h-10 sm:w-11 sm:h-11 rounded-full bg-cream/90 hover:bg-coffee text-coffee hover:text-cream backdrop-blur-sm border border-sand/40 flex items-center justify-center transition-all shadow-card z-20">
+                                <i class="fa-solid fa-arrow-right text-xs"></i>
+                            </button>
+
+                            <!-- Contador Editorial no Topo Direito -->
+                            <div class="absolute top-4 right-4 z-20 bg-coffee/85 backdrop-blur-md text-cream text-[0.7rem] font-medium tracking-[0.18em] px-3.5 py-1.5 rounded-full">
+                                <span id="carousel-counter">01 / 05</span>
+                            </div>
+                        </div>
+
+                        <!-- Bolinhas de Paginação -->
+                        <div id="carousel-dots" class="flex items-center justify-center gap-2.5 mt-5" role="tablist" aria-label="Paginação do carrossel">
+                            <!-- Dots gerados via JS -->
+                        </div>
+
+                        <!-- Nota Discreta de Conformidade Ética do CFBM -->
+                        <p class="mt-4 text-center text-[0.7rem] text-taupe/90 leading-relaxed max-w-2xl mx-auto">
+                            <i class="fa-solid fa-circle-info text-olive mr-1"></i>
+                            Imagens ilustrativas / divulgação autorizada em TCLE. Não representa garantia de resultado; cada ser humano possui características anatômicas únicas.
+                        </p>
+                    </div>
+
+                    <!-- Coluna Direita (5 cols): Painel Dinâmico do Procedimento Ativo -->
+                    <div class="lg:col-span-5 flex">
+                        <div id="service-detail-card"
+                             class="w-full bg-cardWhite border border-sand/40 rounded-3xl p-7 sm:p-9 shadow-soft transition-opacity duration-300 flex flex-col justify-between">
+                            <!-- Conteúdo dinâmico sincronizado com o slide ativo -->
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Abas / Cards Interativos de Acesso Rápido aos 5 Procedimentos -->
+                <div class="reveal opacity-0 translate-y-6 transition-all duration-700 delay-150">
+                    <p class="text-[0.7rem] font-medium uppercase tracking-[0.2em] text-taupe mb-4">
+                        Selecione um protocolo para explorar e agendar:
+                    </p>
+                    <div id="service-tabs" role="tablist" aria-label="Lista de Procedimentos"
+                         class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3.5">
+                        <!-- Cards/Abas preenchidos via JS -->
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- ==========================================================
+             5. SEÇÃO SOBRE A DRA. VALQUÍRIA COM FOTO DEDICADA (#sobre)
+             ========================================================== -->
+        <section id="sobre" class="py-24 lg:py-32">
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+                    <!-- Coluna Esquerda (5 cols): Moldura Editorial para Foto Dedicada da Dra. Valquíria -->
+                    <div class="lg:col-span-5 reveal opacity-0 translate-y-6 transition-all duration-700">
+                        <div class="relative max-w-[440px] mx-auto lg:mx-0">
+                            <!-- Fundo Geométrico Deslocado -->
+                            <div class="absolute -top-4 -left-4 w-full h-full rounded-3xl bg-sandSurface border border-sand/40 pointer-events-none"></div>
+
+                            <!-- Container da Foto -->
+                            <div class="relative aspect-[4/5] w-full rounded-3xl overflow-hidden bg-sandSurface border border-sand/45 shadow-soft">
+                                <!-- FOTO SEÇÃO SOBRE: Substitua o arquivo abaixo por 'dra-val-sobre.webp' na mesma pasta -->
+                                <img src="dra-val-sobre.JPG"
+                                     alt="Dra. Valquíria Campos Meira — Biomédica Esteta e Professora de Pós-Graduação"
+                                     class="w-full h-full object-cover object-[center_15%] transition-transform duration-700 hover:scale-[1.03]"
+                                     onerror="handleImageFallback(this, 'sobre-photo-fallback')">
+
+                                <!-- Placeholder Editorial Sofisticado -->
+                                <div id="sobre-photo-fallback" class="hidden w-full h-full flex-col items-center justify-center p-8 text-center bg-gradient-to-br from-sandSurface via-[#ECE4D9] to-sand/25">
+                                    <div class="w-20 h-20 rounded-full bg-cream/80 border border-sand/50 flex items-center justify-center text-coffee mb-5 shadow-sm">
+                                        <i class="fa-solid fa-user-doctor text-2xl"></i>
+                                    </div>
+                                    <p class="font-serif text-3xl text-coffee italic mb-1">Dra. Valquíria Meira</p>
+                                    <p class="text-[0.68rem] uppercase tracking-[0.2em] text-olive mb-5">Foto Editorial • Seção Sobre</p>
+                                    <span class="inline-block text-[0.7rem] text-taupe bg-cream/90 border border-sand/40 px-4 py-1.5 rounded-full">
+                                        Inserir arquivo: <strong class="font-semibold text-coffee">dra-val-sobre.webp</strong>
+                                    </span>
+                                </div>
+
+                                <!-- Selo Discreto CRBM 36253 -->
+                                <div class="absolute bottom-4 left-4 right-4 sm:right-auto bg-coffee/90 backdrop-blur-md text-cream px-4 py-2.5 rounded-2xl border border-sand/30 inline-flex items-center gap-2.5 shadow-card">
+                                    <i class="fa-solid fa-certificate text-sand text-sm"></i>
+                                    <span class="text-xs font-medium tracking-[0.14em] uppercase">CRBM 36253</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coluna Direita (7 cols): Apresentação de Autoridade -->
+                    <div class="lg:col-span-7 reveal opacity-0 translate-y-6 transition-all duration-700 delay-150">
+                        <p class="text-xs font-medium uppercase tracking-[0.22em] text-olive mb-4">
+                            Sobre a Dra. Valquíria Meira
+                        </p>
+                        <h2 class="font-serif text-[clamp(2.4rem,4.5vw,3.8rem)] leading-[1.08] font-medium text-coffee mb-7">
+                            Autoridade acadêmica, olhar artístico e respeito à sua <span class="italic text-sand font-normal">identidade.</span>
+                        </h2>
+
+                        <div class="space-y-4 text-base text-taupe font-light leading-relaxed mb-9">
+                            <p>
+                                A <strong class="font-medium text-coffee">Dra. Valquíria Campos Meira</strong> é Biomédica Especialista e Habilitada em Estética (CRBM 36253), reconhecida por sua atuação pautada em segurança anatômica, atendimento humanizado e resultados extremamente naturais.
+                            </p>
+                            <p>
+                                Além da prática clínica exclusiva no Itaim Bibi, compartilha sua expertise na formação de novos especialistas — unindo ciência atualizada, sensibilidade estética e técnica refinada para realçar traços sem exageros.
+                            </p>
+                        </div>
+
+                        <!-- 4 Credenciais de Autoridade -->
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-9">
+                            <div class="bg-cardWhite border border-sand/35 rounded-2xl p-5 shadow-card flex items-start gap-4 hover:border-coffee/40 transition-colors">
+                                <div class="w-10 h-10 rounded-full bg-sandSurface text-coffee flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-microscope text-sm"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-serif text-xl font-semibold text-coffee leading-tight mb-1">Biomédica Especialista</h3>
+                                    <p class="text-xs text-taupe leading-relaxed">Habilitada em Estética (CRBM 36253) com rigor técnico e ético.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-cardWhite border border-sand/35 rounded-2xl p-5 shadow-card flex items-start gap-4 hover:border-coffee/40 transition-colors">
+                                <div class="w-10 h-10 rounded-full bg-sandSurface text-olive flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-graduation-cap text-sm"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-serif text-xl font-semibold text-coffee leading-tight mb-1">Professora de Pós-Graduação</h3>
+                                    <p class="text-xs text-taupe leading-relaxed">Docente em Estética Avançada formando profissionais de excelência.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-cardWhite border border-sand/35 rounded-2xl p-5 shadow-card flex items-start gap-4 hover:border-coffee/40 transition-colors">
+                                <div class="w-10 h-10 rounded-full bg-sandSurface text-coffee flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-chalkboard-user text-sm"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-serif text-xl font-semibold text-coffee leading-tight mb-1">Ministra Cursos de HOF</h3>
+                                    <p class="text-xs text-taupe leading-relaxed">Referência prática em técnicas modernas de Harmonização Facial.</p>
+                                </div>
+                            </div>
+
+                            <div class="bg-cardWhite border border-sand/35 rounded-2xl p-5 shadow-card flex items-start gap-4 hover:border-coffee/40 transition-colors">
+                                <div class="w-10 h-10 rounded-full bg-sandSurface text-olive flex items-center justify-center shrink-0">
+                                    <i class="fa-solid fa-earth-americas text-sm"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-serif text-xl font-semibold text-coffee leading-tight mb-1">Monitora Internacional</h3>
+                                    <p class="text-xs text-taupe leading-relaxed">Atualização contínua em protocolos globais e anatomia aplicada.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <a href="https://wa.me/5511993923335?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20consulta%20de%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Valqu%C3%ADria%20Meira."
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           onclick="if(typeof fbq !== 'undefined'){ fbq('track', 'Contact'); }"
+                           class="inline-flex items-center gap-3 bg-coffee hover:bg-coffeeDark text-cream text-xs sm:text-sm font-medium uppercase tracking-[0.13em] px-8 py-4 rounded-full shadow-card transition-all duration-300 hover:-translate-y-0.5">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>Agendar Minha Consulta com a Dra. Valquíria</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+             6. A EXPERIÊNCIA NO CONSULTÓRIO COM FOTO DEDICADA (#consultorio)
+             ========================================================== -->
+        <section id="consultorio" class="py-24 lg:py-32 bg-coffee text-cream relative overflow-hidden">
+            <!-- Detalhe Geométrico Sutil -->
+            <div class="pointer-events-none absolute -bottom-24 -right-24 w-96 h-96 rounded-full border border-sand/15"></div>
+
+            <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12 relative z-10">
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+
+                    <!-- Coluna Esquerda (6 cols): Área Sofisticada para Foto do Consultório -->
+                    <div class="lg:col-span-6 reveal opacity-0 translate-y-6 transition-all duration-700">
+                        <div class="relative">
+                            <!-- Moldura Fina Dourada -->
+                            <div class="absolute -inset-3 rounded-3xl border border-sand/30 pointer-events-none"></div>
+
+                            <div class="relative aspect-[4/3] w-full rounded-3xl overflow-hidden bg-coffeeDark border border-sand/35 shadow-soft">
+                                <!-- FOTO DO CONSULTÓRIO: Substitua o arquivo abaixo por 'consultorio-itaim.webp' na mesma pasta -->
+                                <img src="consultorio-itaim.jpg"
+                                     alt="Consultório da Dra. Valquíria Meira na Rua Joaquim Floriano, Itaim Bibi, São Paulo"
+                                     class="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.03]"
+                                     onerror="handleImageFallback(this, 'consultorio-photo-fallback')">
+
+                                <!-- Placeholder Editorial do Consultório -->
+                                <div id="consultorio-photo-fallback" class="hidden w-full h-full flex-col items-center justify-center p-8 text-center bg-gradient-to-br from-[#472C1B] via-[#3B2314] to-[#28160C]">
+                                    <div class="w-20 h-20 rounded-full bg-sand/15 border border-sand/40 flex items-center justify-center text-sand mb-5">
+                                        <i class="fa-solid fa-building-columns text-2xl"></i>
+                                    </div>
+                                    <p class="font-serif text-3xl text-cream italic mb-1.5">Consultório Itaim Bibi</p>
+                                    <p class="text-[0.68rem] uppercase tracking-[0.2em] text-sand/85 mb-5">Rua Joaquim Floriano, 413 • 9º Andar</p>
+                                    <span class="inline-block text-[0.7rem] text-cream/90 bg-coffeeDark/80 border border-sand/35 px-4 py-1.5 rounded-full">
+                                        Inserir arquivo: <strong class="font-semibold text-sand">consultorio-itaim.webp</strong>
+                                    </span>
+                                </div>
+
+                                <!-- Legenda Elegante Sobreposta -->
+                                <div class="absolute bottom-4 left-4 bg-cream/95 backdrop-blur-md text-coffee px-4 py-2 rounded-full border border-sand/40 inline-flex items-center gap-2 shadow-card">
+                                    <i class="fa-solid fa-location-dot text-olive text-xs"></i>
+                                    <span class="text-[0.7rem] font-semibold uppercase tracking-[0.16em]">Itaim Bibi • São Paulo</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Coluna Direita (6 cols): Diferenciais da Experiência -->
+                    <div class="lg:col-span-6 reveal opacity-0 translate-y-6 transition-all duration-700 delay-150">
+                        <p class="text-xs font-medium uppercase tracking-[0.22em] text-sand mb-4">
+                            Experiência no Consultório
+                        </p>
+                        <h2 class="font-serif text-[clamp(2.4rem,4.5vw,3.6rem)] leading-[1.08] font-medium text-cream mb-8">
+                            Um ambiente acolhedor, exclusivo e <span class="italic text-sand font-normal">sem pressa.</span>
+                        </h2>
+
+                        <div class="space-y-6 mb-10">
+                            <!-- Item 1 -->
+                            <div class="flex items-start gap-4 border-b border-sand/20 pb-6">
+                                <div class="w-11 h-11 rounded-2xl bg-sand/15 border border-sand/30 text-sand flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-regular fa-clock text-base"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-serif text-2xl font-medium text-cream mb-1">
+                                        1ª Consulta de Avaliação de 1 Hora
+                                    </h3>
+                                    <p class="text-sm text-cream/75 font-light leading-relaxed">
+                                        Atendimento dedicado e sem pressa para análise anatômica completa, escuta das suas expectativas e criação de um plano personalizado.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 2 -->
+                            <div class="flex items-start gap-4 border-b border-sand/20 pb-6">
+                                <div class="w-11 h-11 rounded-2xl bg-sand/15 border border-sand/30 text-sand flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-mug-hot text-base"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-serif text-2xl font-medium text-cream mb-1">
+                                        Sala de Espera Acolhedora
+                                    </h3>
+                                    <p class="text-sm text-cream/75 font-light leading-relaxed">
+                                        Conforto pensado nos mínimos detalhes com café fresquinho, Wi-Fi de alta velocidade e <em>honest market</em> à sua disposição.
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Item 3 -->
+                            <div class="flex items-start gap-4">
+                                <div class="w-11 h-11 rounded-2xl bg-sand/15 border border-sand/30 text-sand flex items-center justify-center shrink-0 mt-0.5">
+                                    <i class="fa-solid fa-car-side text-base"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-serif text-2xl font-medium text-cream mb-1">
+                                        Alto Padrão no Itaim Bibi com Valet
+                                    </h3>
+                                    <p class="text-sm text-cream/75 font-light leading-relaxed">
+                                        Prédio comercial moderno na <strong class="text-cream font-medium">Rua Joaquim Floriano, 413 — 9º andar</strong>, com estacionamento valet no local para sua total comodidade.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Botões de Ação do Consultório -->
+                        <div class="flex flex-col sm:flex-row gap-4">
+                            <a href="https://www.google.com/maps/search/?api=1&query=Rua+Joaquim+Floriano+413+Itaim+Bibi+Sao+Paulo+SP"
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               class="inline-flex items-center justify-center gap-2.5 bg-sand hover:bg-cream text-coffee text-xs sm:text-sm font-semibold uppercase tracking-[0.14em] px-7 py-4 rounded-full transition-all duration-300 shadow-card">
+                                <i class="fa-solid fa-map-location-dot"></i>
+                                <span>Como Chegar (Google Maps)</span>
+                            </a>
+
+                            <a href="https://wa.me/5511993923335?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20minha%20primeira%20consulta%20no%20consult%C3%B3rio%20do%20Itaim%20Bibi."
+                               target="_blank"
+                               rel="noopener noreferrer"
+                               onclick="if(typeof fbq !== 'undefined'){ fbq('track', 'Contact'); }"
+                               class="inline-flex items-center justify-center gap-2.5 bg-transparent hover:bg-sand/15 text-cream border border-sand/50 text-xs sm:text-sm font-medium uppercase tracking-[0.14em] px-7 py-4 rounded-full transition-all duration-300">
+                                <i class="fa-brands fa-whatsapp text-base"></i>
+                                <span>Agendar Horário</span>
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+             7. FAQ INTERATIVO EM ACORDEÃO (#duvidas)
+             ========================================================== -->
+        <section id="duvidas" class="py-24 lg:py-32">
+            <div class="max-w-4xl mx-auto px-5 sm:px-8 lg:px-12">
+                <div class="text-center mb-14 reveal opacity-0 translate-y-6 transition-all duration-700">
+                    <p class="text-xs font-medium uppercase tracking-[0.22em] text-olive mb-4">
+                        Transparência &amp; Segurança
+                    </p>
+                    <h2 class="font-serif text-[clamp(2.4rem,4.5vw,3.8rem)] leading-[1.08] font-medium text-coffee">
+                        Dúvidas <span class="italic text-sand font-normal">Frequentes</span>
+                    </h2>
+                </div>
+
+                <!-- Lista de Acordeões -->
+                <div class="space-y-4 reveal opacity-0 translate-y-6 transition-all duration-700 delay-100" id="faq-container">
+
+                    <!-- FAQ 1 -->
+                    <div class="faq-item bg-cardWhite border border-sand/35 rounded-2xl overflow-hidden transition-colors hover:border-coffee/40">
+                        <button type="button"
+                                class="faq-btn w-full flex items-center justify-between gap-4 px-6 sm:px-8 py-6 text-left"
+                                aria-expanded="false">
+                            <span class="font-serif text-xl sm:text-2xl font-medium text-coffee">
+                                Tenho medo de ficar com o rosto artificial. Como funciona a abordagem?
+                            </span>
+                            <span class="faq-icon w-9 h-9 rounded-full bg-sandSurface text-coffee flex items-center justify-center shrink-0 transition-transform duration-300">
+                                <i class="fa-solid fa-plus text-xs"></i>
+                            </span>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="px-6 sm:px-8 pb-6 text-sm sm:text-base text-taupe font-light leading-relaxed border-t border-sand/20 pt-4">
+                                O propósito da Dra. Valquíria Meira é exatamente o oposto de transformações exageradas. Trabalhamos com harmonização facial sutil e estratégica, respeitando sua anatomia e expressões para que você se sinta mais descansado(a), confiante e radiante — sem deixar de ser você.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 2 -->
+                    <div class="faq-item bg-cardWhite border border-sand/35 rounded-2xl overflow-hidden transition-colors hover:border-coffee/40">
+                        <button type="button"
+                                class="faq-btn w-full flex items-center justify-between gap-4 px-6 sm:px-8 py-6 text-left"
+                                aria-expanded="false">
+                            <span class="font-serif text-xl sm:text-2xl font-medium text-coffee">
+                                Como funciona a primeira consulta de avaliação?
+                            </span>
+                            <span class="faq-icon w-9 h-9 rounded-full bg-sandSurface text-coffee flex items-center justify-center shrink-0 transition-transform duration-300">
+                                <i class="fa-solid fa-plus text-xs"></i>
+                            </span>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="px-6 sm:px-8 pb-6 text-sm sm:text-base text-taupe font-light leading-relaxed border-t border-sand/20 pt-4">
+                                A primeira consulta tem duração de <strong>1 hora</strong>, sem pressa. A Dra. Valquíria faz uma análise completa da sua anatomia facial, ouve suas expectativas e monta um plano de tratamento personalizado, indicando apenas o que realmente faz sentido para o seu caso.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- FAQ 3 -->
+                    
+
+                    <!-- FAQ 4 -->
+                    <div class="faq-item bg-cardWhite border border-sand/35 rounded-2xl overflow-hidden transition-colors hover:border-coffee/40">
+                        <button type="button"
+                                class="faq-btn w-full flex items-center justify-between gap-4 px-6 sm:px-8 py-6 text-left"
+                                aria-expanded="false">
+                            <span class="font-serif text-xl sm:text-2xl font-medium text-coffee">
+                                O consultório possui estacionamento no local?
+                            </span>
+                            <span class="faq-icon w-9 h-9 rounded-full bg-sandSurface text-coffee flex items-center justify-center shrink-0 transition-transform duration-300">
+                                <i class="fa-solid fa-plus text-xs"></i>
+                            </span>
+                        </button>
+                        <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                            <div class="px-6 sm:px-8 pb-6 text-sm sm:text-base text-taupe font-light leading-relaxed border-t border-sand/20 pt-4">
+                                Sim! Estamos em um prédio comercial de alto padrão na <strong>Rua Joaquim Floriano, 413 — 9º andar, Itaim Bibi, São Paulo - SP (CEP 04534-011)</strong>, que conta com serviço de <strong>estacionamento valet no local</strong> para sua praticidade e segurança.
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- ==========================================================
+             8. CTA FINAL & LOCALIZAÇÃO
+             ========================================================== -->
+        <section class="pb-24 lg:pb-32 px-5 sm:px-8 lg:px-12">
+            <div class="max-w-6xl mx-auto bg-sandSurface border border-sand/40 rounded-[2rem] p-8 sm:p-14 lg:p-20 text-center shadow-soft reveal opacity-0 translate-y-6 transition-all duration-700">
+                <p class="text-xs font-medium uppercase tracking-[0.22em] text-olive mb-4">
+                    Agendamento Exclusivo
+                </p>
+                <h2 class="font-serif text-[clamp(2.4rem,4.5vw,3.8rem)] leading-[1.08] font-medium text-coffee max-w-3xl mx-auto mb-6">
+                    Pronto(a) para realçar a sua <span class="italic text-sand font-normal">melhor versão?</span>
+                </h2>
+                <p class="text-sm sm:text-base text-taupe font-light max-w-xl mx-auto mb-4">
+                    Agende sua avaliação personalizada e descubra como a harmonização sutil pode valorizar seus traços com segurança e naturalidade.
+                </p>
+
+                <!-- Endereço em Destaque -->
+                <div class="inline-flex items-center justify-center gap-2.5 text-xs sm:text-sm text-coffee/90 bg-cream/80 border border-sand/35 px-5 py-3 rounded-2xl mb-10">
+                    <i class="fa-solid fa-location-dot text-olive"></i>
+                    <span>Rua Joaquim Floriano, 413 — 9º andar, Itaim Bibi, São Paulo - SP, 04534-011</span>
+                </div>
+
+                <!-- Botões Finais -->
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://wa.me/5511993923335?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20minha%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Valqu%C3%ADria%20Meira."
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       onclick="if(typeof fbq !== 'undefined'){ fbq('track', 'Contact'); }"
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-3 bg-coffee hover:bg-coffeeDark text-cream text-xs sm:text-sm font-medium uppercase tracking-[0.14em] px-9 py-4 rounded-full shadow-card transition-all duration-300 hover:-translate-y-0.5">
+                        <i class="fa-brands fa-whatsapp text-lg"></i>
+                        <span>Agendar pelo WhatsApp</span>
+                    </a>
+
+                    <a href="https://www.google.com/maps/search/?api=1&query=Rua+Joaquim+Floriano+413+Itaim+Bibi+Sao+Paulo+SP"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       class="w-full sm:w-auto inline-flex items-center justify-center gap-2.5 bg-transparent hover:bg-cream text-coffee border border-coffee/35 hover:border-coffee text-xs sm:text-sm font-medium uppercase tracking-[0.14em] px-8 py-4 rounded-full transition-all duration-300">
+                        <i class="fa-solid fa-map-location-dot"></i>
+                        <span>Abrir no Google Maps</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- ==========================================================
+         9. RODAPÉ ÉTICO (COMPLIANCE CFBM)
+         ========================================================== -->
+    <footer class="bg-cardWhite border-t border-sand/30 pt-14 pb-10">
+        <div class="max-w-7xl mx-auto px-5 sm:px-8 lg:px-12">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-8 pb-10 border-b border-sand/25">
+                <div class="text-center md:text-left">
+                    <p class="font-serif text-2xl font-semibold text-coffee">Dra. Valquíria Campos Meira</p>
+                    <p class="text-xs uppercase tracking-[0.16em] text-taupe mt-1">
+                        Biomédica Especialista e Habilitada em Estética • CRBM 36253
+                    </p>
+                </div>
+
+                <!-- Redes Sociais -->
+                <div class="flex items-center gap-3">
+                    <a href="https://www.instagram.com/dravalquiriameira/"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       aria-label="Instagram da Dra. Valquíria Meira"
+                       class="inline-flex items-center gap-2 px-4 py-2.5 rounded-full border border-sand/40 text-xs font-medium text-coffee hover:bg-coffee hover:text-cream transition-all">
+                        <i class="fa-brands fa-instagram text-sm"></i>
+                        <span>@dravalquiriameira</span>
+                    </a>
+                    <a href="https://wa.me/5511993923335"
+                       target="_blank"
+                       rel="noopener noreferrer"
+                       onclick="if(typeof fbq !== 'undefined'){ fbq('track', 'Contact'); }"
+                       aria-label="WhatsApp da Dra. Valquíria Meira"
+                       class="w-10 h-10 rounded-full border border-sand/40 text-coffee hover:bg-coffee hover:text-cream flex items-center justify-center transition-all">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Aviso Legal Obrigatório CFBM -->
+            <div class="pt-8 text-center max-w-4xl mx-auto space-y-4">
+                <p class="text-[0.72rem] text-taupe leading-relaxed">
+                    Cada ser humano tem características anatômicas e fisiológicas únicas. Nenhuma informação ou imagem neste site representa garantia de resultado. Publicidade em conformidade com o Código de Ética do Profissional Biomédico (Resoluções CFBM nº 330/2020 e nº 240/2014).
+                </p>
+                <p class="text-[0.68rem] text-taupe/75 tracking-wide">
+                    © <span id="current-year"></span> Dra. Valquíria Meira. Todos os direitos reservados. • Desenvolvido por
+                    <span class="font-medium text-coffee/80">FSP Health Marketing | Eleven FaMa</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ==========================================================
+         10. BOTÃO FLUTUANTE DE WHATSAPP COM TOOLTIP
+         ========================================================== -->
+    <div class="fixed bottom-6 right-6 z-40 group flex items-center gap-3">
+        <span class="hidden sm:inline-block bg-coffee text-cream text-xs font-medium tracking-wide px-4 py-2 rounded-full shadow-card opacity-0 translate-x-2 group-hover:opacity-100 group-hover:translate-x-0 transition-all duration-300 pointer-events-none">
+            Agendar Avaliação
+        </span>
+        <a href="https://wa.me/5511993923335?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20agendar%20minha%20avalia%C3%A7%C3%A3o%20com%20a%20Dra.%20Valqu%C3%ADria%20Meira."
+           target="_blank"
+           rel="noopener noreferrer"
+           onclick="if(typeof fbq !== 'undefined'){ fbq('track', 'Contact'); }"
+           aria-label="Agendar Avaliação pelo WhatsApp"
+           class="relative w-14 h-14 rounded-full bg-olive hover:bg-coffee text-cream flex items-center justify-center shadow-floating transition-all duration-300 hover:scale-105">
+            <span class="absolute inset-0 rounded-full bg-olive/40 animate-ping pointer-events-none"></span>
+            <i class="fa-brands fa-whatsapp text-2xl relative z-10"></i>
+        </a>
+    </div>
+
+    <!-- ==========================================================
+         JAVASCRIPT: CARROSSEL INTERATIVO, SWIPE, AUTOPLAY, FAQ E REVEAL
+         ========================================================== -->
+    <script>
+        /**
+         * Exibe o placeholder editorial elegante caso o arquivo .webp ainda não esteja na pasta.
+         */
+        function handleImageFallback(imgEl, fallbackId) {
+            if (imgEl) imgEl.classList.add('hidden');
+            const fallback = document.getElementById(fallbackId);
+            if (fallback) {
+                fallback.classList.remove('hidden');
+                fallback.classList.add('flex');
+            }
+        }
+
+        /**
+         * Dados dos 5 Procedimentos do Carrossel & Painel Interativo.
+         * Para usar fotos reais, salve os arquivos .webp com os nomes abaixo na mesma pasta do index.html.
+         */
+        const proceduresData = [
+            {
+                id: 'escultura-labial',
+                number: '01',
+                title: 'Escultura Labial',
+                shortTitle: 'Escultura Labial',
+                tag: 'Ácido Hialurônico',
+                image: 'proc-escultura-labial.webp',
+                icon: 'fa-solid fa-droplet',
+                summary: 'Contorno, hidratação e volume natural com ácido hialurônico.',
+                description: 'Planejamento individualizado para devolver hidratação profunda, realçar o contorno e proporcionar volume proporcional, preservando a maciez e a naturalidade dos seus lábios.',
+                indications: [
+                    'Definição sutil do contorno e melhora do ressecamento labial',
+                    'Equilíbrio de assimetrias entre o lábio superior e inferior',
+                    'Volume elegante sem aspecto projetado ou artificial'
+                ],
+                whatsappMessage: 'Olá! Gostaria de agendar uma avaliação para Escultura Labial com a Dra. Valquíria Meira.'
+            },
+            {
+                id: 'russian-lips',
+                number: '02',
+                title: 'Russian Lips',
+                shortTitle: 'Russian Lips',
+                tag: 'Desenho Refinado',
+                image: 'proc-russian-lips.webp',
+                icon: 'fa-regular fa-gem',
+                summary: 'Técnica de definição e desenho labial refinado.',
+                description: 'Técnica avançada de preenchimento labial que valoriza o arco do cupido e promove eversão vertical delicada, mantendo o perfil alinhado e elegante.',
+                indications: [
+                    'Quem deseja maior desenho e destaque no arco do cupido',
+                    'Efeito de lábios mais abertos e definidos sem projeção frontal',
+                    'Execução milimétrica adaptada ao seu formato labial'
+                ],
+                whatsappMessage: 'Olá! Gostaria de agendar uma avaliação para a técnica Russian Lips com a Dra. Valquíria Meira.'
+            },
+            {
+                id: 'rinomodelacao',
+                number: '03',
+                title: 'Rinomodelação com Ácido Hialurônico',
+                shortTitle: 'Rinomodelação',
+                tag: 'Harmonia do Perfil',
+                image: 'proc-rinomodelacao.webp',
+                icon: 'fa-solid fa-compass-drafting',
+                summary: 'Equilíbrio e harmonia do perfil nasal sem cirurgia.',
+                description: 'Procedimento minimamente invasivo voltado para suavizar pequenas irregularidades no dorso nasal e elevar sutilmente a ponta, respeitando a segurança vascular da região.',
+                indications: [
+                    'Suavização de desníveis sutis no dorso do nariz',
+                    'Melhora da sustentação e leve elevação da ponta nasal',
+                    'Alternativa não cirúrgica para equilibrar o perfil facial'
+                ],
+                whatsappMessage: 'Olá! Gostaria de agendar uma avaliação para Rinomodelação com Ácido Hialurônico com a Dra. Valquíria Meira.'
+            },
+            {
+                id: 'harmonizacao-sutil',
+                number: '04',
+                title: 'Harmonização Facial Sutil',
+                shortTitle: 'Harmonização Sutil',
+                tag: 'Feminino',
+                image: 'proc-harmonizacao-sutil.webp',
+                icon: 'fa-solid fa-user-check',
+                summary: 'Estruturação e rejuvenescimento sem exageros.',
+                description: 'Abordagem global para mulheres e homens focada em repor pontos estratégicos de sustentação, suavizar o aspecto cansado e equilibrar contornos mantendo sua identidade.',
+                indications: [
+                    'Rejuvenescimento discreto e restauração da sustentação facial',
+                    'Equilíbrio de malar, mento e contorno mandibular',
+                    'Protocolos específicos respeitando traços femininos'
+                ],
+                whatsappMessage: 'Olá! Gostaria de agendar uma avaliação para Harmonização Facial Sutil com a Dra. Valquíria Meira.'
+            },
+            {
+                id: 'toxina-bioestimuladores',
+                number: '05',
+                title: 'Toxina Botulínica & Bioestimuladores',
+                shortTitle: 'Toxina & Colágeno',
+                tag: 'Prevenção & Pele',
+                image: 'proc-toxina-bioestimuladores.webp',
+                icon: 'fa-solid fa-sparkles',
+                summary: 'Prevenção e qualidade de pele preservando a expressão natural.',
+                description: 'Combinação estratégica para suavizar linhas dinâmicas sem congelar a mímica facial e estimular a produção natural de colágeno, entregando firmeza e viço progressivo.',
+                indications: [
+                    'Prevenção e suavização de rugas de expressão com naturalidade',
+                    'Estímulo contínuo de colágeno contra a flacidez inicial',
+                    'Gerenciamento do envelhecimento com elegância e longevidade'
+                ],
+                whatsappMessage: 'Olá! Gostaria de agendar uma avaliação para Toxina Botulínica e Bioestimuladores com a Dra. Valquíria Meira.'
+            }
+        ];
+
+        let activeSlideIndex = 0;
+        let isAutoplayActive = true;
+        let autoplayTimer = null;
+        const AUTOPLAY_INTERVAL_MS = 5500;
+
+        /**
+         * Constrói os slides do carrossel no DOM.
+         */
+        function buildCarouselSlides() {
+            const track = document.getElementById('carousel-track');
+            if (!track) return;
+
+            track.innerHTML = proceduresData.map((proc, index) => {
+                const fallbackId = `slide-fallback-${index}`;
+                return `
+                    <div class="w-full h-full shrink-0 relative bg-sandSurface">
+                        <!-- FOTO DO PROCEDIMENTO ${proc.number}: Substitua por '${proc.image}' na mesma pasta -->
+                        <img src="${proc.image}"
+                             alt="${proc.title} — Dra. Valquíria Meira"
+                             class="w-full h-full object-cover"
+                             onerror="handleImageFallback(this, '${fallbackId}')">
+
+                        <!-- Placeholder Editorial em Tons Terrosos para o Slide -->
+                        <div id="${fallbackId}" class="hidden w-full h-full flex-col items-center justify-center p-8 text-center bg-gradient-to-br from-[#F3EDE5] via-[#E8DFD3] to-[#D9CBB8]">
+                            <div class="w-16 h-16 rounded-full bg-cream/85 border border-sand/50 text-coffee flex items-center justify-center mb-5 shadow-sm">
+                                <i class="${proc.icon} text-xl"></i>
+                            </div>
+                            <span class="text-[0.65rem] font-semibold uppercase tracking-[0.22em] text-olive mb-2">
+                                Slide ${proc.number} • ${proc.tag}
+                            </span>
+                            <h3 class="font-serif text-3xl sm:text-4xl text-coffee font-medium max-w-md leading-tight mb-2">
+                                ${proc.title}
+                            </h3>
+                            <p class="text-xs sm:text-sm text-taupe font-light max-w-sm mb-5">
+                                ${proc.summary}
+                            </p>
+                            <span class="inline-block text-[0.68rem] text-taupe bg-cream/90 border border-sand/45 px-4 py-1.5 rounded-full">
+                                Inserir foto: <strong class="font-semibold text-coffee">${proc.image}</strong>
+                            </span>
+                        </div>
+
+                        <!-- Gradiente e Legenda Discreta na Base (visível sobre fotos reais) -->
+                        <div class="pointer-events-none absolute inset-x-0 bottom-0 bg-gradient-to-t from-coffee/85 via-coffee/35 to-transparent p-5 sm:p-7">
+                            <span class="inline-block text-[0.62rem] uppercase tracking-[0.2em] text-sand font-medium mb-1">
+                                ${proc.tag}
+                            </span>
+                            <p class="font-serif text-xl sm:text-2xl text-cream font-medium leading-snug">
+                                ${proc.title}
+                            </p>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        /**
+         * Atualiza a posição do carrossel, bolinhas, contador, abas e painel de detalhes.
+         */
+        function updateCarouselUI(animateDetail = false) {
+            const track = document.getElementById('carousel-track');
+            const counter = document.getElementById('carousel-counter');
+            const dotsContainer = document.getElementById('carousel-dots');
+            const tabsContainer = document.getElementById('service-tabs');
+            const detailCard = document.getElementById('service-detail-card');
+
+            if (track) {
+                track.style.transform = `translateX(-${activeSlideIndex * 100}%)`;
+            }
+
+            if (counter) {
+                counter.textContent = `${String(activeSlideIndex + 1).padStart(2, '0')} / ${String(proceduresData.length).padStart(2, '0')}`;
+            }
+
+            if (dotsContainer) {
+                dotsContainer.innerHTML = proceduresData.map((proc, index) => {
+                    const isActive = index === activeSlideIndex;
+                    return `
+                        <button type="button"
+                                role="tab"
+                                aria-selected="${isActive}"
+                                aria-label="Ir para ${proc.title}"
+                                onclick="goToSlide(${index})"
+                                class="h-2.5 rounded-full transition-all duration-300 ${
+                                    isActive ? 'w-8 bg-coffee' : 'w-2.5 bg-sand/55 hover:bg-coffee/50'
+                                }">
+                        </button>
+                    `;
+                }).join('');
+            }
+
+            if (tabsContainer) {
+                tabsContainer.innerHTML = proceduresData.map((proc, index) => {
+                    const isActive = index === activeSlideIndex;
+                    return `
+                        <button type="button"
+                                role="tab"
+                                aria-selected="${isActive}"
+                                onclick="goToSlide(${index})"
+                                class="text-left p-4 rounded-2xl border transition-all duration-300 flex flex-col justify-between gap-2 ${
+                                    isActive
+                                        ? 'bg-coffee text-cream border-coffee shadow-card -translate-y-0.5'
+                                        : 'bg-cardWhite text-coffee border-sand/35 hover:border-coffee/45 hover:bg-cream'
+                                }">
+                            <div class="flex items-center justify-between w-full">
+                                <span class="font-serif italic text-base ${isActive ? 'text-sand' : 'text-taupe/70'}">${proc.number}</span>
+                                <i class="${proc.icon} text-xs ${isActive ? 'text-sand' : 'text-olive'}"></i>
+                            </div>
+                            <span class="font-serif text-lg sm:text-xl font-medium leading-tight">
+                                ${proc.shortTitle}
+                            </span>
+                        </button>
+                    `;
+                }).join('');
+            }
+
+            if (detailCard) {
+                const proc = proceduresData[activeSlideIndex];
+                const waUrl = `https://wa.me/5511993923335?text=${encodeURIComponent(proc.whatsappMessage)}`;
+
+                const renderCardHtml = () => {
+                    detailCard.innerHTML = `
+                        <div>
+                            <div class="flex items-center justify-between gap-3 mb-4">
+                                <span class="inline-block text-[0.65rem] font-medium uppercase tracking-[0.2em] text-olive bg-sandSurface px-3.5 py-1.5 rounded-full">
+                                    ${proc.tag}
+                                </span>
+                                <span class="font-serif italic text-2xl text-sand">${proc.number}</span>
+                            </div>
+
+                            <h3 class="font-serif text-3xl sm:text-[2.1rem] font-medium text-coffee leading-tight mb-3.5">
+                                ${proc.title}
+                            </h3>
+
+                            <p class="text-sm text-taupe font-light leading-relaxed mb-6">
+                                ${proc.description}
+                            </p>
+
+                            <div class="border-t border-sand/25 pt-5 mb-7">
+                                <h4 class="text-[0.7rem] font-semibold uppercase tracking-[0.18em] text-coffee mb-3">
+                                    Indicações Principais
+                                </h4>
+                                <ul class="space-y-2.5">
+                                    ${proc.indications.map(item => `
+                                        <li class="flex items-start gap-2.5 text-xs sm:text-sm text-taupe font-light leading-relaxed">
+                                            <i class="fa-solid fa-check text-olive text-[0.68rem] mt-1.5 shrink-0"></i>
+                                            <span>${item}</span>
+                                        </li>
+                                    `).join('')}
+                                </ul>
+                            </div>
+                        </div>
+
+                        <a href="${waUrl}"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           onclick="if(typeof fbq !== 'undefined'){ fbq('track', 'Contact'); }"
+                           class="w-full inline-flex items-center justify-center gap-2.5 bg-coffee hover:bg-coffeeDark text-cream text-xs font-medium uppercase tracking-[0.13em] px-6 py-4 rounded-full shadow-card transition-all duration-300 hover:-translate-y-0.5">
+                            <i class="fa-brands fa-whatsapp text-base"></i>
+                            <span>Quero Saber Mais no WhatsApp</span>
+                        </a>
+                    `;
+                };
+
+                if (animateDetail) {
+                    detailCard.classList.add('opacity-0');
+                    setTimeout(() => {
+                        renderCardHtml();
+                        detailCard.classList.remove('opacity-0');
+                    }, 160);
+                } else {
+                    renderCardHtml();
+                }
+            }
+        }
+
+        function goToSlide(index) {
+            if (index === activeSlideIndex) return;
+            activeSlideIndex = (index + proceduresData.length) % proceduresData.length;
+            updateCarouselUI(true);
+            resetAutoplayTimer();
+        }
+
+        function nextSlide() {
+            activeSlideIndex = (activeSlideIndex + 1) % proceduresData.length;
+            updateCarouselUI(true);
+            resetAutoplayTimer();
+        }
+
+        function prevSlide() {
+            activeSlideIndex = (activeSlideIndex - 1 + proceduresData.length) % proceduresData.length;
+            updateCarouselUI(true);
+            resetAutoplayTimer();
+        }
+
+        function startAutoplay() {
+            stopAutoplay();
+            if (!isAutoplayActive) return;
+            autoplayTimer = setInterval(() => {
+                activeSlideIndex = (activeSlideIndex + 1) % proceduresData.length;
+                updateCarouselUI(true);
+            }, AUTOPLAY_INTERVAL_MS);
+        }
+
+        function stopAutoplay() {
+            if (autoplayTimer) {
+                clearInterval(autoplayTimer);
+                autoplayTimer = null;
+            }
+        }
+
+        function resetAutoplayTimer() {
+            if (isAutoplayActive) {
+                startAutoplay();
+            }
+        }
+
+        function toggleCarouselAutoplay() {
+            isAutoplayActive = !isAutoplayActive;
+            const icon = document.getElementById('autoplay-icon');
+            const label = document.getElementById('autoplay-label');
+
+            if (isAutoplayActive) {
+                if (icon) icon.className = 'fa-solid fa-pause text-[0.65rem] text-olive';
+                if (label) label.textContent = 'Autoplay ativo';
+                startAutoplay();
+            } else {
+                if (icon) icon.className = 'fa-solid fa-play text-[0.65rem] text-taupe';
+                if (label) label.textContent = 'Autoplay pausado';
+                stopAutoplay();
+            }
+        }
+
+        /**
+         * Inicialização geral após carregamento do DOM.
+         */
+        document.addEventListener('DOMContentLoaded', () => {
+            // 1. Ano dinâmico no rodapé
+            const yearEl = document.getElementById('current-year');
+            if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+            // 2. Inicialização do Carrossel de Procedimentos + Swipe Touch + Pausa no Hover
+            buildCarouselSlides();
+            updateCarouselUI(false);
+            startAutoplay();
+
+            const viewport = document.getElementById('carousel-viewport');
+            if (viewport) {
+                let touchStartX = 0;
+                let touchEndX = 0;
+
+                viewport.addEventListener('touchstart', (e) => {
+                    touchStartX = e.changedTouches[0].screenX;
+                    stopAutoplay();
+                }, { passive: true });
+
+                viewport.addEventListener('touchend', (e) => {
+                    touchEndX = e.changedTouches[0].screenX;
+                    const deltaX = touchStartX - touchEndX;
+                    if (Math.abs(deltaX) > 40) {
+                        if (deltaX > 0) nextSlide();
+                        else prevSlide();
+                    } else if (isAutoplayActive) {
+                        startAutoplay();
+                    }
+                }, { passive: true });
+
+                viewport.addEventListener('mouseenter', () => stopAutoplay());
+                viewport.addEventListener('mouseleave', () => {
+                    if (isAutoplayActive) startAutoplay();
+                });
+            }
+
+            // 3. Menu Mobile Toggle
+            const menuBtn = document.getElementById('mobile-menu-btn');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const menuIcon = document.getElementById('menu-icon');
+            const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+            function toggleMobileMenu(forceClose = false) {
+                const isOpen = menuBtn.getAttribute('aria-expanded') === 'true';
+                const nextState = forceClose ? false : !isOpen;
+                menuBtn.setAttribute('aria-expanded', String(nextState));
+
+                if (nextState) {
+                    mobileMenu.style.maxHeight = mobileMenu.scrollHeight + 'px';
+                    menuIcon.classList.replace('fa-bars', 'fa-xmark');
+                } else {
+                    mobileMenu.style.maxHeight = '0px';
+                    menuIcon.classList.replace('fa-xmark', 'fa-bars');
+                }
+            }
+
+            if (menuBtn && mobileMenu) {
+                menuBtn.addEventListener('click', () => toggleMobileMenu());
+                mobileLinks.forEach(link => {
+                    link.addEventListener('click', () => toggleMobileMenu(true));
+                });
+            }
+
+            // 4. Acordeão de FAQ Suave
+            const faqButtons = document.querySelectorAll('.faq-btn');
+            faqButtons.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const isExpanded = btn.getAttribute('aria-expanded') === 'true';
+                    const content = btn.nextElementSibling;
+                    const icon = btn.querySelector('.faq-icon');
+
+                    faqButtons.forEach(otherBtn => {
+                        if (otherBtn !== btn) {
+                            otherBtn.setAttribute('aria-expanded', 'false');
+                            otherBtn.nextElementSibling.style.maxHeight = '0px';
+                            otherBtn.querySelector('.faq-icon').classList.remove('rotate-45', 'bg-coffee', 'text-cream');
+                        }
+                    });
+
+                    btn.setAttribute('aria-expanded', String(!isExpanded));
+                    if (!isExpanded) {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                        icon.classList.add('rotate-45', 'bg-coffee', 'text-cream');
+                    } else {
+                        content.style.maxHeight = '0px';
+                        icon.classList.remove('rotate-45', 'bg-coffee', 'text-cream');
+                    }
+                });
+            });
+
+            // 5. Animação de Scroll Reveal (IntersectionObserver)
+            const revealElements = document.querySelectorAll('.reveal');
+            if ('IntersectionObserver' in window) {
+                const observer = new IntersectionObserver((entries, obs) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.remove('opacity-0', 'translate-y-6');
+                            entry.target.classList.add('opacity-100', 'translate-y-0');
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.12 });
+
+                revealElements.forEach(el => observer.observe(el));
+            } else {
+                revealElements.forEach(el => el.classList.remove('opacity-0', 'translate-y-6'));
+            }
+        });
+    </script>
+</body>
+</html>
